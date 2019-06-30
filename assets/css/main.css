@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:100,200,300,400,500,600,700');
+
+/*~~~~~~~~~~~~~~~ html, body, heading, section, */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-family: "Muli", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+hr,
+h1,
+h3,
+h4 {
+    margin: 0;
+}
+
+
+.container-fluid,
+.row {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.uppercase {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.section-top {
+    background-color: #ad1e38;
+    font-family: "Muli", sans-serif;
+    color: #3b2a74;
+    padding-top: 60px;
+    padding-bottom: 75px;
+}
+
+.section-main-title {
+    font-size: 30px;
+    font-weight: 400;
+    color: #dcdae2;
+}
+
+.section-title {
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 30px;
+    color: #dcdae2;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.magic-border {
+    width: 90%;
+    border: .5px solid #3b2a74;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+    border-radius: 4px;
+    background-color: #dcdae2;
+    border: none;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.btn:hover {
+    color: #dcdae2;
+    background-color: #3b2a74;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.btn-info {
+    font-weight: 300;
+    color: #3b2a74;
+    background-color: #dcdae2;
+    border-radius: 4px;
+    border: 0;
+    outline: none;
+}
+
+
+/*~~~~~~~~~~~~~~~ Navigation Bar */
+
+.navbar {
+    margin-bottom: 0px;
+    background: #000000;
+    z-index: 999999;
+    top: 0px !important;
+    min-height: 60px;
+    box-shadow: 0px 4px 30px 1px rgb(91, 192, 221, 0.2);
+}
+
+.navbar-brand {
+    padding-top: 20px;
+    padding-left: 25px;
+}
+
+.nav>li {
+    position: relative;
+    display: block;
+    padding-right: 20px;
+}
+
+.navbar-nav>li>a {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    width: 80px;
+    height: 50px;
+    text-align: center;
+}
+
+.hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #3b2a74;
+    height: 1px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: .35s;
+    transition-duration: .35s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 10px 8px;
+    margin-top: 12px;
+    margin-right: 30px;
+    margin-bottom: 0px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid #fff0;
+    border-radius: 4px;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+    border: 0;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+/*~~~~~~~~~~~~~~~ top slider */
+
+/* added from https://www.w3schools.com/bootstrap/bootstrap_ref_js_carousel.asp - carousel with javasctipt - bootstrap */
+
+.home {
+    margin-top: 60px;
+}
+
+
+.carousel-indicators {
+    opacity: 0.5;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+}
+
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .carousel-caption {
+        right: 20%;
+        left: 20%;
+        padding-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .carousel-indicators {
+        opacity: 0.5;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        z-index: 15;
+        width: 60%;
+        padding-left: 0;
+        margin-left: -30%;
+        text-align: center;
+        list-style: none;
+        font-size: 5px;
+    }
+    .carousel-caption h3 {
+        font-size: 18px;
+    }
+
+    .carousel-caption p {
+        font-size: 12px;
+        margin: 0 0 0px;
+    }
+}
+
+/*~~~~~~~~~~~~~~~ news */
+
+.btn-subscribe {
+    margin-top: 10px;
+}
+
+.main-news {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.main-news img {
+    width: 100%;
+    height: 100%;
+}
+
+.main-news a {
+    text-align: right;
+    float: right;
+}
+
+.card {
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-table;
+}
+
+.card-title {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #dcdae2;
+}
+
+.card-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #dcdae2;
+}
+
+/*~~~~~~~~~~~~~~~ about us */
+
+#about {
+    background-color: #dcdae2;
+}
+
+.invert {
+    color: #3b2a74;
+}
+
+.about-top {
+    text-align: center;
+}
+
+.about-main {
+    text-align: center;
+}
+
+.card-aboutus {
+    max-width: 320px;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: inline-table;
+    background-color: #3b2a74;
+    color: #000000;
+    border-radius: 50px;
+}
+
+.card-aboutus-title {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #dcdae2;
+}
+
+.card-aboutus-name {
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 15px;
+    color: #dcdae2;
+}
+
+
+.card-aboutus-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #dcdae2;
+}
+
+
+.card-aboutus img {
+    width: 95%;
+    vertical-align: middle;
+    margin-top: 35px;
+    border: 2px solid #3b2a74;
+}
+
+/*~~~~~~~~~~~~~~~ offer */
+
+.section-title-offer {
+    font-weight: 600;
+    margin-top: 10px;
+    color: #dcdae2;
+}
+
+.label-danger {
+    margin-left: 20px;
+}
+
+.label-success {
+    margin-left: 20px;
+}
+
+.label-warning {
+    margin-left: 20px;
+}
+.label-info {
+    margin-left: 20px;
+}
+/*~~~~~~~~~~~~~~~ media */
+#music {
+    background-color: #dcdae2;
+}
+.invert {
+    color: #3b2a74;
+}
+audio {
+    width: 100%;
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+
+.you-tube-video {
+    min-width: 100%;
+    height: 100%;
+}
+
+.you-tube-video iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/*~~~~~~~~~~~~~~~ contact */
+
+.info-box {
+    margin-top: 10px;
+    padding: 20px;
+    font-weight: 200;
+    background-color: #dcdae2;
+    border: 1px solid #3b2a74;
+    border-radius: 25px;
+}
+
+.info-box hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.info-box h5 {
+    padding-top: 5px;
+}
+
+.info-box p {
+    margin-top: -5px;
+}
+
+.important-number {
+    color: #3b2a74 !important;
+    text-decoration: none;
+}
+
+.form-group{
+    color: #dcdae2;
+}
+
+/*~~~~~~~~~~~~~~~ footer */
+
+footer {
+    padding-top: 60px;
+    background-color: #000000;
+}
+
+.footer-actual {
+    min-height: 150px;
+    color: #3b2a74;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+.newsletter-email {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-color: #3b2a74;
+}
+
+.newsletter-btn {
+    margin-top: 10px;
+}
+
+.social-header {
+    font-weight: 300;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    margin-top: 30px;
+    color: #dcdae2;
+}
+
+.social-icon {
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-icon li a i {
+    width: 40px;
+    height: 40px;
+    padding: 18px 0px;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 6px;
+    text-align: center;
+    color: #3b2a74;
+    background: #dcdae2;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-icon li a i:hover {
+    color: #dcdae2;
+    background: #3b2a74;
+}
+
+.footer2 {
+    background-color: #000000;
+    color: #3b2a74;
+    border-top: 1px solid #3b2a74;
+}
+
+.copyrights {
+    font-weight: 200;
+    margin-top: 20px;
+}
+
+.mail-to-me {
+    text-decoration: none;
+    color: #dcdae2;;
+}
+
+.mail-to-me:hover {
+    text-decoration: none;
+    color: #ad1e38;
+}
+
+/*~~~~~~~~~~~~~~~ GoUp button */
+
+#myBtn {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    background-color: #3b2a74;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    outline: none;
+    opacity: 0.6;
+}
+
+#myBtn:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    #myBtn {
+        z-index: -99;
+        right: -100px;
+    }
+}
+
+/*~~~~~~~~~~~~~~~ Media queries */
+
+@media (min-width: 768px) {
+    .navbar-nav>li {
+        float: left;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .info-box {
+        margin-top: 60px;
+        padding: 20px;
+        font-weight: 200;
+        background-color: #dcdae2;
+        border: 1px solid #3b2a74;
+        border-radius: 25px;
+    }
+
+    .you-tube-video {
+        margin-top: 60px;
+        min-width: 100%;
+        height: 100%;
+
+    }
+
+}
