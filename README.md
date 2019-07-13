@@ -27,29 +27,19 @@
     window.onscroll = function() { scrollFunction() };
 
         function scrollFunction() {
-
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-
                 document.getElementById("myBtn").style.display = "block";
-
             }
-
             else {
-
                 document.getElementById("myBtn").style.display = "none";
-
             }
-
         }
 
         // When the user clicks on the button, scroll to the top of the document
 
         function topFunction() {
-
             document.body.scrollTop = 0;
-
             document.documentElement.scrollTop = 0;
-
         }
 ```
 
@@ -62,16 +52,14 @@
     ('a[href^="#"]').on('click', function(event) {
 
     var target = (this.getAttribute('href'));
-
-    if( target.length ) {
-        event.preventDefault();
-        ('html, body').stop().animate({
-            scrollTop: target.offset().top
-        }, 1000);
-    }
-
-});
-}
+        if( target.length ) {
+            event.preventDefault();
+            ('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 1000);
+        }
+    });
+    
 ```
 * Carousel at the top of website was created based on code from - [w3schools](https://www.w3schools.com/bootstrap/bootstrap_ref_js_carousel.asp)
 * Menu toggle collapse script from [Codeply](https://www.codeply.com/go/XtiWqN3lGn) used to make the navigation bar simple and easy to use while displayed on small devices.
@@ -112,34 +100,33 @@ Team members presented in separated cards with photos, names and roles.
 The purpose of website is to let old, new fans to hear songs and see videos of Badaboum.
 Badaboum also want to give the fans best offers and make their dreams come true by allow them to contact and make special events for them as Weddings or Christmas parties.
 
-> As a fan of Badaboum I would like to now all the latest news about them.
+> As a fan of Badaboum I would like to know all the latest news about them.
 
 > I'm a new fan of Badaboum and I want to know more about my lovely band and team members.
 
-> As a friend of Badaboum fan I want to listen their songs to found out what kind of music they're playing.
+> As a friend of Badaboum I would like to listen to their songs and found out what kind of music they're playing.
 
-> Our band have a big dream to play as a Badaboum support. I would like to call their Manager and ask if it's possible.
+> Our band have a big dream to play as a Badaboum support. I would like to Contact them or there Manager and ask if it's possible.
 
 
 ## Testing
 
-This website was tested on a Google Chrome browser by using an extension tool - Viewport Resizer.
-After website was fully loaded into the Viewport Resizer. I've pressed the Animation button to see how website will react on the viewport changes.
-While the width of the website was changing I was scrolling up and scrolling down to see how the images, text and contact form input fields are going to behave and chang the sizes. 
-I've used the standard sizes in the Viewport Resizer to see how te website is look like on a different devices, as a tablets and phones.
-On each viewport widths I was clicking on all buttons and links to see how they going to react.
+This website has been tested using Google Chrome with an extension tool - Viewport Resizer.
+After website was fully loaded into the Viewport Resizer. I used the Animation button to see how website will react on the viewport changes.
+While the width of the website was changing, It was scrolled up and down to see how the images, text and contact form input fields are going to behave and change. 
+I've used the standard sizes in the Viewport Resizer to see how the website will look on a different device, E.g. tablet or phones as well as PC monitors.
+On each viewport widths I checked all buttons and links to see how they going to react.
 
-I have also viewed in sufari browser, and tested the reponcive sizing as well as the functions for this site.
+I have also tested using safari browser and tested the responsive sizing as well as the functions for this site.
 
-By clicking on the links in the navigation bar, the smooth scrollFunction will work correctly on all viewport sizes. No clicking order needed.
+By clicking on the links in the navigation bar, the smooth scroll function will work correctly on all viewport sizes. No clicking order needed.
 Toggle button collapse correctly by clicking on "hamburger button" or by clicking on menu links on all viewport sizes.
 
-Contact form required fields are: Nam and Surname, E-mail Address and Message. The 'required' attribute is added to them and to Email Address field on the bottom of the page ( newsletter subscription ).They will not allowed you to submit form before filling them.
-When you try to submit the contact form without filling any of input boxes. You will se the message on the top of empty input box says, "! Please fill in this field.".
+Contact form required fields are: Name and Surname, E-mail Address and Message. The 'required' attribute is added to them and to Email Address field on the bottom of the page (newsletter subscription). This will not allowed you to submit the form before completing them.
+When you try to submit the contact form without filling any of input boxes. You will see the message on the top of empty input box says, "! Please fill in this field.".
 Mouse cursor will be automatically focus in empty input box.
 
-To see if all audio files works correctly I've clicked on each play button, while playing I was maneuvering volume bar, muting and putting volume back on.
-I was clicking on song progress bar to change the time of playing song to check if it will play the song along the changes without any problems.
+To see if all audio files works correctly, I've clicked on each play button, while playing I checked all available functions to the user during play back.
 
 * When the viewport width is less than 768px aside button 'goToTheTop' is not visible otherwise on larger screen is visible
 * Website was tested on Note 8. Works and look good in portrait and landscape layout.
@@ -164,7 +151,7 @@ Website looks and works good on different browsers and all most common screen si
 
 ## Credits / Acknowledgement
 
-> Whole website text was created and written by myself (Karol Sliwka).
+> Whole website text was created and written by myself (Kenrick Hatton).
 >
 >
 > Photos used in this project are from certain pages searched via [GoogleImageSearch](https://www.google.com/advanced_image_search)
@@ -210,3 +197,7 @@ Website looks and works good on different browsers and all most common screen si
 ##### *All assets have been used for educational purposes
 
 * Kenrick.hatton.dev@gmail.com for info
+
+
+##### *DISCLAMER - The Band is A Real band but theormation on this website is 
+##### Fitional and is for the purpous of an educational full stack webdevelopers course only.
