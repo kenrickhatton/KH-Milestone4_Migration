@@ -1,5 +1,5 @@
 # Badaboum 
-<img src="http://PUTHUROKU HERE" style="widt:100%;">
+<img src="https://kenrickhatton.github.io/KH-Milestone4_Migration/assets/images/concert_photo_3.jpeg" style="widt:100%;">
 
 > This is a First Milestone Project for [Code Institute](https://codeinstitute.net/) Full Stack Developer Course.</br>
 > Website is about the rock band from 1960's. Badaboum is playing around 50 years on the rock stage giving theirs fans the best emotions and memories.
